@@ -1,0 +1,26 @@
+/* ---------------------------------------------------------
+ 9. The Blue Crest Project Page
+-------------------------------------------------------- */
+.blue-crest-page {
+	.project-content .info { padding-top: 13px; }
+}
+
+#floorPlanContainer {
+	display: none;
+	border-top: 1px dashed #0091d1;
+	
+	.blue-crest-page & {
+		display: block;
+	}
+
+	h2 {
+		@extend %blue-title;
+		margin-top: -18px;
+		margin-bottom: 50px;
+		padding-left: 10px;
+	}
+
+	.caption {
+		text-align: center;
+	}
+}

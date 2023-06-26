@@ -1,0 +1,29 @@
+/* ---------------------------------------------------------
+ 6. The Gold Crest Project Page
+-------------------------------------------------------- */
+.gold-crest-page {
+
+	.project-logo,
+	.project-address {
+		margin-top: 0;
+	}
+
+	@media only screen and (max-device-width: 650px) {
+		.project-logo {
+			width: 33%;
+		}
+	}
+
+	@media only screen and (max-device-width: 480px) {
+		.project-logo {
+			width: 40%;
+		}
+
+		.project-address {
+			clear: left;
+			margin-left: 15px;
+			width: 100%;
+		}
+	}
+
+}

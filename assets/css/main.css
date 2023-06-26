@@ -1,0 +1,440 @@
+/*---------------------------------------------------------
+ 1. Reset
+-------------------------------------------------------- */
+/* ---------------------------------------------------------
+ 1. Globals
+-------------------------------------------------------- */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #595a5c;
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-smoothing: subpixel-antialiased;
+}
+
+.blue-title-h1, .blue-title-h2, #floorPlanContainer h2 {
+  background: #0091d0 none repeat scroll 0 0;
+  color: #ffffff;
+  display: block;
+  font-family: "Roboto";
+  font-weight: 100;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.blue-title-h1 {
+  padding: 0 60px 0 10px;
+}
+
+.blue-title-h2 {
+  font-size: 36px;
+  padding: 0 10px;
+}
+
+.logo img, #heroCarousel img, #mapContainer img, .project-content img,
+.project-content .large-photo {
+  border: 0;
+  height: auto;
+  width: 100%;
+}
+
+#loader {
+  height: 200px;
+  text-align: center;
+  white-space: nowrap;
+}
+#loader:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+#loader .inner {
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+  margin: 0 auto;
+}
+
+#mainContentContainer {
+  position: relative;
+  background: url(/img/bg-main-content.png) repeat;
+}
+.home-page #mainContentContainer, .about-us-page #mainContentContainer, .enquiry-page #mainContentContainer, .info-center-page #mainContentContainer {
+  border-top: 10px solid #00adcb;
+  padding: 140px 0 65px;
+}
+.home-page #mainContentContainer .blue-title-h1 {
+  display: inline-block;
+}
+.home-page #mainContentContainer .home-content p {
+  clear: both;
+}
+.about-us-page #mainContentContainer .about-us-content p {
+  text-align: justify;
+}
+.gold-crest-page #mainContentContainer {
+  border-top: 10px solid #e37926;
+}
+.gold-crest-page #mainContentContainer .project-link {
+  background: #e37926;
+}
+.springfields-page #mainContentContainer {
+  border-top: 10px solid #00a5ac;
+}
+.springfields-page #mainContentContainer .project-link {
+  background: #00a5ac;
+}
+.springdale-page #mainContentContainer {
+  border-top: 10px solid #603913;
+}
+.springdale-page #mainContentContainer .project-link {
+  background: #8b6925;
+}
+.blue-crest-page #mainContentContainer {
+  border-top: 10px solid #009edb;
+}
+.blue-crest-page #mainContentContainer .project-link {
+  background: #009edb;
+}
+.luxus-tower-page #mainContentContainer {
+  border-top: 10px solid #c59952;
+}
+.luxus-tower-page #mainContentContainer .project-link {
+  background: #c59952;
+}
+#mainContentContainer #mainContent {
+  margin-bottom: 60px;
+}
+
+/* ---------------------------------------------------------
+ 2. Logo & Navigation
+-------------------------------------------------------- */
+header {
+  position: relative;
+  z-index: 1;
+}
+
+.navbar-default {
+  background: none;
+  border: 0 none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.navbar {
+  margin-bottom: 0px;
+  margin-top: 55px;
+}
+
+.navbar-nav > li > a {
+  padding-bottom: 5px;
+}
+
+.dropdown-menu .divider {
+  margin: 3px 0;
+}
+
+.navbar-nav .dropdown-menu small {
+  color: #c8c8c8;
+  display: block;
+  font-size: 70%;
+  letter-spacing: 1px;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  background: none;
+  box-shadow: none;
+}
+
+.navbar-default .navbar-nav > .active > a > .name {
+  background: none;
+  box-shadow: none;
+  border-bottom: 3px solid #e37a26;
+}
+
+.navbar-default .navbar-nav > .active > a:focus {
+  outline: none;
+}
+
+@media only screen and (max-device-width: 767px) {
+  .navbar {
+    margin-top: 20px;
+  }
+
+  #mainNav {
+    text-align: right;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 379px) {
+  .navbar > .container .navbar-brand,
+  .navbar > .container-fluid .navbar-brand {
+    margin-top: 0;
+  }
+}
+@media only screen and (min-device-width: 380px) and (max-device-width: 449px) {
+  .navbar > .container .navbar-brand,
+  .navbar > .container-fluid .navbar-brand {
+    margin-top: -.5em;
+  }
+}
+@media only screen and (min-device-width: 450px) and (max-device-width: 549px) {
+  .navbar > .container .navbar-brand,
+  .navbar > .container-fluid .navbar-brand {
+    margin-top: -1em;
+  }
+}
+@media only screen and (min-device-width: 550px) and (max-device-width: 767px) {
+  .navbar > .container .navbar-brand,
+  .navbar > .container-fluid .navbar-brand {
+    margin-top: -1.5em;
+  }
+}
+@media only screen and (min-device-width: 768px) {
+  .navbar > .container .navbar-brand,
+  .navbar > .container-fluid .navbar-brand {
+    margin-top: -2em;
+  }
+}
+/* ---------------------------------------------------------
+ 3. HeroCarousel
+-------------------------------------------------------- */
+/* ---------------------------------------------------------
+ 4. BadgeContainer
+-------------------------------------------------------- */
+#badgeContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#badgeContainer img {
+  margin-top: -12%;
+}
+@media only screen and (max-device-width: 767px) {
+  #badgeContainer img {
+    margin-top: -25%;
+  }
+}
+
+/* ---------------------------------------------------------
+ 5. Google Maps
+-------------------------------------------------------- */
+/* ---------------------------------------------------------
+ 6. Disclaimer
+-------------------------------------------------------- */
+#disclaimer {
+  margin: 30px auto 10px;
+  overflow: hidden;
+  position: relative;
+}
+#disclaimer h4 {
+  font-size: inherit;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+#disclaimer hr {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+#disclaimer p {
+  text-align: justify;
+  width: 91%;
+}
+#disclaimer p,
+#disclaimer .disclaimer-link {
+  font-size: 11.55px;
+}
+#disclaimer .disclaimer-link {
+  font-style: italic;
+  text-decoration: underline;
+  position: absolute;
+  right: 30px;
+  bottom: -5px;
+}
+
+/* ---------------------------------------------------------
+ 7. Footer
+-------------------------------------------------------- */
+footer {
+  font-size: 12px;
+  padding: 5px 0 10px;
+  border-top: 1px dashed #767678;
+}
+
+/* ---------------------------------------------------------
+ 8. Project-Content Generic for all Projects Pages
+-------------------------------------------------------- */
+.project-content > .row:before {
+  content: "";
+  vertical-align: middle;
+  height: 100%;
+}
+.project-content > .row .project-logo,
+.project-content > .row .project-address {
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+.project-content .project-logo,
+.project-content .project-address {
+  margin-top: 2%;
+}
+@media only screen and (max-device-width: 640px) {
+  .project-content .project-logo,
+  .project-content .project-address {
+    text-align: center;
+    width: 100%;
+  }
+  .project-content .project-logo {
+    margin-top: 14%;
+  }
+}
+@media only screen and (max-device-width: 520px) {
+  .project-content .project-logo {
+    margin-top: 20%;
+  }
+}
+@media only screen and (max-device-width: 420px) {
+  .project-content .project-logo {
+    margin-top: 25%;
+  }
+}
+.project-content .info {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.3em;
+  padding-top: 5px;
+  margin-left: -15px;
+}
+.project-content .content {
+  text-align: justify;
+  padding: 30px 0 65px;
+}
+@media only screen and (max-device-width: 767px) {
+  .project-content .content {
+    padding-top: 50px;
+  }
+}
+.project-content .list-container {
+  margin-top: -10px;
+}
+@media only screen and (max-device-width: 767px) {
+  .project-content .list-container {
+    margin-top: 15px;
+  }
+}
+.project-content .list {
+  margin-left: -20px;
+}
+.project-content h4 {
+  margin: 5px 0;
+  font-weight: 400;
+}
+.project-content .project-link {
+  font-size: 17px;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 2px;
+  display: inline-block;
+  margin-bottom: 60px;
+  background: #e47927;
+  width: 100%;
+}
+
+/* ---------------------------------------------------------
+ Enquiry Page
+-------------------------------------------------------- */
+#enquiryForm .error {
+  display: none;
+}
+
+/*---------------------------------------------------------
+ 2. Basic Style
+-------------------------------------------------------- */
+/*---------------------------------------------------------
+ 3. Header
+-------------------------------------------------------- */
+/*---------------------------------------------------------
+ 4. Main
+-------------------------------------------------------- */
+/*---------------------------------------------------------
+ 5. Projects
+-------------------------------------------------------- */
+/* ---------------------------------------------------------
+ 6. The Gold Crest Project Page
+-------------------------------------------------------- */
+.gold-crest-page .project-logo,
+.gold-crest-page .project-address {
+  margin-top: 0;
+}
+@media only screen and (max-device-width: 650px) {
+  .gold-crest-page .project-logo {
+    width: 33%;
+  }
+}
+@media only screen and (max-device-width: 480px) {
+  .gold-crest-page .project-logo {
+    width: 40%;
+  }
+  .gold-crest-page .project-address {
+    clear: left;
+    margin-left: 15px;
+    width: 100%;
+  }
+}
+
+/* ---------------------------------------------------------
+ 7. The Springfields Project Page
+-------------------------------------------------------- */
+/* ---------------------------------------------------------
+ 8. The Springdale Project Page
+-------------------------------------------------------- */
+.springdale-page .project-logo,
+.springdale-page .project-address {
+  margin-top: 5%;
+}
+.springdale-page .highlighted {
+  font-style: italic;
+  color: #8b6925;
+}
+
+/* ---------------------------------------------------------
+ 9. The Blue Crest Project Page
+-------------------------------------------------------- */
+.blue-crest-page .project-content .info {
+  padding-top: 13px;
+}
+
+#floorPlanContainer {
+  display: none;
+  border-top: 1px dashed #0091d1;
+}
+.blue-crest-page #floorPlanContainer {
+  display: block;
+}
+#floorPlanContainer h2 {
+  margin-top: -18px;
+  margin-bottom: 50px;
+  padding-left: 10px;
+}
+#floorPlanContainer .caption {
+  text-align: center;
+}
+
+/* ---------------------------------------------------------
+ 10. The Luxus Tower Project Page
+-------------------------------------------------------- */
+.luxus-tower-page .project-content .row + .content.row {
+  margin-top: 10px;
+}
+
+.silver-crest-page .project-content .project-link {
+  background: #4776c8;
+}
